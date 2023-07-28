@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+  <title> ENTERTAINMENT </title>
+
+  
+  <style>
+
+footer{background-color:aliceblue;height:50px;}
+header{background-color:aquamarine;height:150px;}
+nav ul li {display:inline; margin:15px;}
+
+  </style>
+
+
+<script>
+ function jfun1()
+{
+        //alert("just for testing")
+    name=frml.t1.value;
+    designation=frml.t2.value;
+    email=frml.t3.value;
+    location=frml.t4.value;
+   
+
+    if(name=="")
+    {
+        
+        alert("please enter the name")
+        return false;
+    }
+    else if(designation=="")
+    {
+        alert("please enter the designation")
+        return false;
+
+    }
+    else if(email=="")
+    {
+        alert("please enter the  valid email")
+        return false;
+    }
+    else if(location=="")
+    {
+        alert("please enter the location")
+        return false;
+    }
+    else 
+    {
+        alert("go head")
+        return true;
+    }
+}
+    
+    
+
+</script>
+
+<body>
+
+<header style="background-image:url(image/1.jpeg);">
+
+</header>
+<nav>
+    <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Courses.html">Courses</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="contact.html">contact</a></li>
+        <li><a href="registration.html">registration</a></li>
+    </ul>
+</nav>
+<center>
+    <div style="background-color: grey;width:50% ;">
+         <h2>registration page</h2>
+            
+        <form name="frml" onsubmit="return jfun1()"action="thanks.html">
+            <pre>
+                Name        <input type="text" name="t1" placeholder="your name here" ><br>
+                designation <input type="text" name="t2" placeholder="your designation here" ><br>
+                email       <input type="text" name="t3" placeholder="your email here" ><br>
+                location   <input type="text"  name="t4" placeholder="your location here" ><br>
+                <input type="Submit" value="Register">
+        </pre>
+        </form>
+    </div>.
+        
+ </center> 
+        
+ <br>
+<br>
+<footer style="background-color:darkgreen;height:200px;">
+    This Website is Developed By : Bhamini
+
+</footer>
+
+</body>
+</html>
